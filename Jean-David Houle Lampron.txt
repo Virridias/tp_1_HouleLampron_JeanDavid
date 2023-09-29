@@ -1,0 +1,19 @@
+Jean-David Houle Lampron
+
+Lien GitHub : 
+
+
+Requete pour cree la table film 
+
+create table `film` (
+    `id` int(11) not null primary key auto_increment,
+    `titre` varchar(255) default null,
+    `annee_difusion` int(11) default null,
+    `genre` varchar(50) default null,
+    `directeur` varchar(50) default null
+);
+
+insert into film (nom, annee_difusion, genre, directeur)
+values ('Avatar','2009','science-fiction','James Cameron'),
+('jumper','2008','science-fiction','Doug Liman'),
+('number 4','2011','science-fiction','D. J. Caruso')
